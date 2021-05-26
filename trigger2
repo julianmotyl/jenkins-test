@@ -1,0 +1,16 @@
+2 eme essaie avec une scruttation des branches  */*
+Suite à cette erreur :
+Lancé par un changement dans la base de code
+java.lang.IllegalArgumentException: Invalid refspec refs/heads/**
+	at org.eclipse.jgit.transport.RefSpec.checkValid(RefSpec.java:507)
+	at org.eclipse.jgit.transport.RefSpec.<init>(RefSpec.java:159)
+	at org.eclipse.jgit.transport.RefSpec.<init>(RefSpec.java:194)
+	at jenkins.plugins.git.GitSCMFileSystem$BuilderImpl.build(GitSCMFileSystem.java:362)
+	at jenkins.scm.api.SCMFileSystem.of(SCMFileSystem.java:197)
+	at jenkins.scm.api.SCMFileSystem.of(SCMFileSystem.java:173)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:114)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:68)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:309)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE
